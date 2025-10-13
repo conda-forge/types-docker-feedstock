@@ -24,6 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
+    - types-paramiko
     - types-requests
     - urllib3 >=2
 
