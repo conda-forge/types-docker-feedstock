@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: types-docker
-  version: "7.1.0.20250916"
+  version: "7.1.0.20251009"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/types_docker-${{ version }}.tar.gz
-  sha256: 770d777d2aa0fc523a05c3daa7a922ef0db4370ff111481018e51793ad68d5d0
+  sha256: 37af2a9ed5c3d76308ee9b9958cf1506fe9bcfbfed9c0a20bd9856dbca90424e
 
 build:
   number: 0
@@ -24,6 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
+    - types-paramiko
     - types-requests
     - urllib3 >=2
 
