@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: types-docker
-  version: "7.1.0.20260328"
+  version: "7.1.0.20260402"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/types_docker-${{ version }}.tar.gz
-  sha256: 6e1a614685bc494580226891da1d01e0cfca6bd00b2761d8239ef09806b2154b
+  sha256: 2df72c6268a815f4ba28fe2556072a99b8acffe46370fa4d27c485355af2e37e
 
 build:
   number: 0
