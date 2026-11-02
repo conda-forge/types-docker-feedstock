@@ -20,12 +20,12 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools
+    - setuptools >=82.0.1
     - pip
   run:
     - python >=${{ python_min }}
+    - requests >=2.34.0
     - types-paramiko
-    - types-requests
     - urllib3 >=2
 
 tests:
@@ -33,7 +33,9 @@ tests:
       imports:  # dummy import to get pip_check running
         - os
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - package_contents:
       site_packages:
         - docker-stubs/__init__.pyi
