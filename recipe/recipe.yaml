@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: types-docker
-  version: "7.2.0.20261102"
+  version: "7.2.0.20261122"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/fa/67/8d93779ea6562cc34c264dbbf98019958e6c788ba631a126401cab2b4613/types_docker-${{ version }}.tar.gz
-  sha256: af141295dfc2760f2452fed89988ecfd86e2a66411206eb7c190aadc41d10e12
+  url: https://files.pythonhosted.org/packages/e5/4c/b192c2d36ff0d6436f6e81b73d486d7829c7e521492746358fdee2ac9b44/types_docker-${{ version }}.tar.gz
+  sha256: 69a7f1910c3cffb4ddf7fb3165bad6141058b03ec2679c73b56cd961e7772db7
 
 build:
   number: 0
